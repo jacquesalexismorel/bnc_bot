@@ -1,0 +1,5 @@
+python-telegram-bot==21.6
+zxing-cpp>=2.2
+reportlab>=4.0
+pillow>=10.0
+pypdf>=4.0

@@ -1,0 +1,15 @@
+[Unit]
+Description=Bot Telegram BNC
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/bnc-bot
+EnvironmentFile=/home/ubuntu/bnc-bot/.env
+ExecStart=/home/ubuntu/bnc-bot/venv/bin/python bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
